@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: #333333;
+    margin-top: 32px;
+}
+nav {
+    margin-top: 3rem;
+    width: 610px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #bdbdbd;
+}
+.pagebuttons {
+    color: #333333;
+    width: 90px;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.pagebuttons:hover {
+    border-bottom: 4px solid #2f80ed;
+}
+.pagebuttons:nth-child(2) {
+    border-bottom: 4px solid #2f80ed;
+}
+
+form {
+    margin-top: 20px;
+    width: 610px;
+    min-height: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+input#input {
+    width: 476px;
+    border-radius: 12px;
+    padding-left: 12px;
+    color: #bdbdbd;
+    border: #bdbdbd 1px solid;
+}
+button#input {
+    width: 109px;
+    color: white;
+    background-color: #2f80ed;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.93;
+}
+button#input:hover {
+    opacity: 1;
+}
+
+section {
+    width: 610px;
+}
+.task {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+}
+input[type="checkbox"]:checked ~ label {
+    text-decoration: line-through gray;
+}
